@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Respira e Desce - Área de Membros</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Meta Referrer for YouTube Embed fix on local files -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <!-- HEADER / BRANDING -->
+        <header class="app-header">
+            <div class="logo-area">
+                <span class="brand-subtitle">Plataforma Exclusiva</span>
+                <h1 class="brand-title">Método Respira e Desce</h1>
+            </div>
+            <div class="user-profile">
+                <div class="avatar">G</div>
+                <div class="user-meta">
+                    <span class="user-name">Gestante Preparada</span>
+                    <span class="user-status">Acesso Garantido</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- LAYOUT PRINCIPAL -->
+        <main class="main-layout">
+            
+            <!-- MENU LATERAL / NAVEGAÇÃO DE CONTEÚDO -->
+            <aside class="sidebar">
+                <nav class="modules-nav">
+                    
+                    <!-- PRODUTO PRINCIPAL -->
+                    <div class="nav-section">
+                        <h3 class="section-title">Aulas de Respiração</h3>
+                        <ul class="lesson-list" id="lessons-breathing">
+                            <!-- Injetado dinamicamente via JS -->
+                        </ul>
+                    </div>
+
+                    <!-- GUIA RÁPIDO DE BOLSO -->
+                    <div class="nav-section">
+                        <h3 class="section-title">Material de Apoio</h3>
+                        <button class="nav-btn-guia" id="btn-guia">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            Guia Rápido de Bolso (E-book)
+                        </button>
+                    </div>
+
+                </nav>
+            </aside>
+
+            <!-- ÁREA DE EXIBIÇÃO DO CONTEÚDO (VIDEO PLAYER OU LEITOR) -->
+            <section class="content-display" id="content-display">
+                
+                <!-- CONTAINER DO PLAYER E TABS -->
+                <div class="viewer-card" id="viewer-card">
+                    
+                    <!-- ABAS DE NAVEGAÇÃO INTERNA (CONCEITO VS PRÁTICA) -->
+                    <div class="tabs-navigation">
+                        <button class="tab-btn active" data-tab="teoria">
+                            <span class="tab-number">Módulo 1</span>
+                            Conceito Teórico (Rico)
+                        </button>
+                        <button class="tab-btn" data-tab="pratica">
+                            <span class="tab-number">Módulo 2</span>
+                            Exercício Prático
+                        </button>
+                    </div>
+
+                    <!-- PLAYER DE VÍDEO -->
+                    <div class="video-wrapper">
+                        <div class="video-container">
+                            <iframe id="video-player" src="" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- DETALHES DA AULA -->
+                    <div class="lesson-details">
+                        <span class="lesson-tag" id="display-lesson-category">Aula 1 • Fundamentos</span>
+                        <h2 class="lesson-title" id="display-lesson-title">Carregando aula...</h2>
+                        <p class="lesson-desc" id="display-lesson-desc">Carregando detalhes...</p>
+                        
+                        <div class="concept-card" id="display-concept-box">
+                            <h4 class="concept-title">Sacada de Ouro:</h4>
+                            <p class="concept-text" id="display-concept-text">Carregando segredo prático...</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- LEITOR DO GUIA RÁPIDO DE BOLSO -->
+                <!-- LEITOR DO GUIA RÁPIDO DE BOLSO -->
+                <div class="ebook-card hidden" id="ebook-card">
+                    <div class="ebook-header">
+                        <div>
+                            <span class="ebook-tag">Material Exclusivo</span>
+                            <h2 class="ebook-title">Guia Rápido de Bolso: Método Respira e Desce</h2>
+                        </div>
+                        <div class="ebook-actions">
+                            <button class="btn-download-pdf" id="btn-download-pdf">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                Salvar em PDF (Imprimir)
+                            </button>
+                            <button class="btn-close-ebook" id="btn-close-ebook">Fechar Leitor</button>
+                        </div>
+                    </div>
+
+                    <div class="ebook-body">
+                        <div class="ebook-intro">
+                            <p><strong>Querida Gestante e acompanhante,</strong> este guia rápido de bolso foi elaborado para ser o seu mapa prático nos momentos mais intensos da preparação e do trabalho de parto. Leia com atenção as técnicas e posições recomendadas abaixo para cada uma das fases principais.</p>
+                        </div>
+
+                        <!-- FASE 1 -->
+                        <div class="ebook-section">
+                            <h3 class="ebook-sec-title">1. Fase de Dilatação (Latente e Ativa)</h3>
+                            <div class="ebook-tip-box">
+                                <span class="tip-badge">MÉTODO: RESPIRAÇÃO FLOR E VELA</span>
+                                <p><strong>O que ocorre no corpo:</strong> O colo do útero começa a afinar e se dilatar de 0 a 8cm. As contrações são ritmadas, vindo como ondas de energia. A tensão muscular ou o medo aumentam a dor porque contraem o períneo por reflexo.</p>
+                                <p><strong>Como Fazer a Respiração:</strong>
+                                    <br>• <strong>Inspiração (A Flor):</strong> Puxe o ar devagar pelo nariz expandindo suavemente a barriga e as costelas (mentalize o perfume de uma flor por 4 segundos).
+                                    <br>• <strong>Expiração (A Vela):</strong> Solte o ar pela boca muito suavemente, mantendo os lábios relaxados, como se estivesse balançando de leve a chama de uma vela sem apagá-la (expire por 8 segundos).
+                                </p>
+                                <p><strong>Posições Recomendadas:</strong>
+                                    <br>• Sentada com pernas abertas sobre a bola de Pilates, fazendo movimentos circulares com o quadril.
+                                    <br>• De pé, apoiada nos ombros do seu parceiro ou em uma parede, balançando o quadril de um lado para o outro.
+                                </p>
+                                <p class="tip-alert"><strong>Dica para o Acompanhante:</strong> Faça massagem circular firme na região lombar (sacro) durante as contrações. Monitore o ritmo dela para garantir que ela expire no dobro do tempo da inspiração.</p>
+                            </div>
+                        </div>
+
+                        <!-- FASE 2 -->
+                        <div class="ebook-section">
+                            <h3 class="ebook-sec-title">2. Fase de Transição (Abertura Profunda: 8 a 10cm)</h3>
+                            <div class="ebook-tip-box">
+                                <span class="tip-badge">MÉTODO: SOPRO VOCALIZADO COM SONS GRAVES</span>
+                                <p><strong>O que ocorre no corpo:</strong> É a fase mais intensa e rápida, onde a dilatação se completa. A tempestade hormonal é máxima, trazendo tremores ou cansaço intenso. A vontade natural de contrair ou travar o ar pode aparecer.</p>
+                                <p><strong>Como Fazer a Respiração:</strong>
+                                    <br>• Ao sentir a contração vir, inspire normalmente e expire fazendo um som longo, grave e aberto com a garganta, como <em>"Uuuuuh"</em> ou <em>"Oooooh"</em>.
+                                    <br>• <strong>Por que fazer isso?</strong> Existe uma conexão neurológica direta entre a sua garganta e o assoalho pélvico. Manter a boca aberta e a garganta relaxada emitindo sons graves abre a pelve por reflexo.
+                                </p>
+                                <p class="tip-alert"><strong>Evite:</strong> Gritos agudos ou finos. Eles bloqueiam o colo do útero e tensionam o períneo, atrasando o processo.</p>
+                                <p class="tip-alert"><strong>Dica para o Acompanhante:</strong> Olhe nos olhos dela, segure firme suas mãos e respire junto com ela em tom audível para ajudá-la a não perder o foco nos sons graves.</p>
+                            </div>
+                        </div>
+
+                        <!-- FASE 3 -->
+                        <div class="ebook-section">
+                            <h3 class="ebook-sec-title">3. Fase Expulsiva (Nascimento e Descida do Bebê)</h3>
+                            <div class="ebook-tip-box">
+                                <span class="tip-badge">MÉTODO: O PUXO FISIOLÓGICO (SOPRO RESISTENTE)</span>
+                                <p><strong>O que ocorre no corpo:</strong> O útero se dilata totalmente e começa a contrair para empurrar o bebê para baixo. O corpo sente o reflexo natural de empurrar (puxo fisiológico).</p>
+                                <p><strong>Como Fazer a Respiração:</strong>
+                                    <br>• Não prenda a respiração (evite a força de apnéia travada que cansa e diminui o oxigênio do bebê).
+                                    <br>• Inspire profundamente e expire empurrando a força para baixo (em direção ao canal vaginal), soltando o ar devagar pelos lábios semicerrados (como se estivesse enchendo uma bexiga muito firme).
+                                    <br>• Deixe a descida ocorrer no ritmo do seu sopro. Isso protege o assoalho pélvico e reduz drasticamente o risco de laceração.
+                                </p>
+                                <p><strong>Posições Recomendadas:</strong> Posicionamento vertical (agachada com apoio, de joelhos inclinada para a frente, quatro apoios, ou deitada de lado puxando a perna).</p>
+                                <p class="tip-alert"><strong>Dica para o Acompanhante:</strong> Dê suporte físico para manter a gestante firme e confortável nas posições escolhidas. Lembre-a de soltar totalmente a mandíbula durante os puxos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="app-footer">
+            <p>© 2026 Método Respira e Desce • Todos os direitos reservados. Este conteúdo não substitui o acompanhamento médico obstétrico.</p>
+        </footer>
+
+    </div>
+
+    <!-- MODAL DE AVISO DE PROTOCOLO LOCAL -->
+    <div id="protocol-warning" class="warning-overlay hidden">
+        <div class="warning-card">
+            <span class="warning-icon">⚠️</span>
+            <h2 class="warning-title">Modo de Visualização Direta</h2>
+            <p class="warning-text">
+                Você abriu a página diretamente pelo arquivo HTML. Devido às políticas de segurança do YouTube, <strong>os vídeos não carregarão</strong> a partir deste modo de visualização.
+            </p>
+            <div class="warning-steps">
+                <div class="warning-step-item">
+                    <span class="warning-step-number">1</span>
+                    <span class="warning-step-text">Feche esta aba do seu navegador.</span>
+                </div>
+                <div class="warning-step-item">
+                    <span class="warning-step-number">2</span>
+                    <span class="warning-step-text">Abra a pasta do projeto e dê um duplo-clique no arquivo <strong>iniciar.bat</strong>.</span>
+                </div>
+                <div class="warning-step-item">
+                    <span class="warning-step-number">3</span>
+                    <span class="warning-step-text">O servidor local iniciará de forma automática e abrirá a página no endereço seguro (localhost:3080).</span>
+                </div>
+            </div>
+            <div class="warning-btn-group">
+                <button class="warning-btn-primary" onclick="window.close() || alert('Por favor, feche esta aba manualmente no seu navegador.')">Entendi, vou fechar</button>
+                <button class="warning-btn-secondary" onclick="document.getElementById('protocol-warning').classList.add('hidden')">Continuar apenas para leitura (Sem Vídeos)</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Link -->
+    <script src="app.js"></script>
+</body>
+</html>
+
