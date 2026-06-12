@@ -556,6 +556,32 @@ body {
     .lesson-title {
         font-size: 22px;
     }
+
+    /* Ajustes do Leitor de Ebook no Celular */
+    .ebook-card {
+        padding: 24px 16px;
+        border-radius: var(--radius-md);
+        margin: 0 8px;
+    }
+
+    .ebook-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .ebook-actions {
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .btn-close-ebook, .btn-download-pdf {
+        width: 100%;
+        justify-content: center;
+        padding: 12px;
+        font-size: 13px;
+    }
 }
 
 /* PROTOCOL WARNING OVERLAY */
