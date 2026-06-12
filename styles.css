@@ -527,7 +527,7 @@ body {
     }
     
     .sidebar {
-        order: 2;
+        /* Permite que a barra de aulas apareça antes do player no mobile */
     }
     
     .app-container {
