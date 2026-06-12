@@ -69,14 +69,14 @@ const DATABASE = {
                 category: "Aula 5 • O Dia do Parto",
                 title: "Simulação Real com o Parceiro",
                 teoria: {
-                    video: "https://www.youtube.com/embed/HwMhxYKUKwc", // Mariana Betioli
-                    desc: "Como o parceiro de parto (acompanhante) pode guiar o ritmo da respiração da gestante quando ela estiver cansada ou sob forte emoção.",
-                    tip: "O acompanhante deve respirar junto com a gestante, olhando nos olhos dela e ditando o ritmo de forma calma."
+                    video: "https://www.youtube.com/embed/3n2c0gO2N8Y", // Aline Pélvica - Massagem no trabalho de parto
+                    desc: "Aprenda exatamente onde massagear (região lombar, sacro e glúteos) e como realizar as técnicas de contrapressão lombar durante as contrações para aliviar o desconforto e a dor do parto.",
+                    tip: "O acompanhante deve usar um óleo de massagem para facilitar o deslizamento e aplicar pressão firme e constante na região sacral."
                 },
                 pratica: {
-                    video: "https://www.youtube.com/embed/dYnMGlpOy4I", // Relato e Prática - Respiração na dor
-                    desc: "Treino prático em dupla e simulação de contrações reais: veja a aplicação das técnicas de respiração, mentalização e suporte do parceiro.",
-                    tip: "Sincronizem as respirações lentas para criar um ambiente de absoluta segurança e união."
+                    video: "https://www.youtube.com/embed/Jm_C_9_X3Bw", // Como o acompanhante ajuda de verdade / Posições
+                    desc: "Treino prático de simulação: veja como dar suporte físico à gestante em posições ativas (em pé, de joelhos ou na bola) e a conduzir e sincronizar a respiração junto com ela.",
+                    tip: "Pratiquem a respiração diafragmática em sintonia e ensaiem as posições físicas para que ambos se sintam seguros no dia."
                 }
             }
         ]
