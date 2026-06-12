@@ -69,12 +69,12 @@ const DATABASE = {
                 category: "Aula 5 • O Dia do Parto",
                 title: "Simulação Real com o Parceiro",
                 teoria: {
-                    video: "https://www.youtube.com/embed/3n2c0gO2N8Y", // Aline Pélvica - Massagem no trabalho de parto
+                    video: "https://www.youtube.com/embed/FLofJV_cEWo", // Aline Pélvica - Massagem no trabalho de parto
                     desc: "Aprenda exatamente onde massagear (região lombar, sacro e glúteos) e como realizar as técnicas de contrapressão lombar durante as contrações para aliviar o desconforto e a dor do parto.",
                     tip: "O acompanhante deve usar um óleo de massagem para facilitar o deslizamento e aplicar pressão firme e constante na região sacral."
                 },
                 pratica: {
-                    video: "https://www.youtube.com/embed/Jm_C_9_X3Bw", // Como o acompanhante ajuda de verdade / Posições
+                    video: "https://www.youtube.com/embed/YvE4cGrSWiU", // Como o acompanhante ajuda de verdade / Posições
                     desc: "Treino prático de simulação: veja como dar suporte físico à gestante em posições ativas (em pé, de joelhos ou na bola) e a conduzir e sincronizar a respiração junto com ela.",
                     tip: "Pratiquem a respiração diafragmática em sintonia e ensaiem as posições físicas para que ambos se sintam seguros no dia."
                 }
